@@ -50,19 +50,27 @@
                                             <constraint firstAttribute="height" constant="36" id="Ufj-n3-q5l"/>
                                         </constraints>
                                         <state key="normal" title="SourceTree Demo"/>
+                                        <connections>
+                                            <action selector="buttonTapped:" destination="S4R-Ja-viH" eventType="touchUpInside" id="Hbg-Ou-aO7"/>
+                                        </connections>
                                     </button>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Hello World!" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QmU-Df-m56">
-                                        <rect key="frame" x="86" y="97" width="166" height="36"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello World!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IUv-gj-yGc">
+                                        <rect key="frame" x="74" y="102" width="188" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="Yl0-eI-48l"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstItem="QmU-Df-m56" firstAttribute="top" secondItem="isI-sJ-glc" secondAttribute="bottom" constant="3" id="1TU-ms-hdY"/>
+                                    <constraint firstItem="IUv-gj-yGc" firstAttribute="top" secondItem="isI-sJ-glc" secondAttribute="bottom" constant="8" symbolic="YES" id="9gr-ya-GIN"/>
                                     <constraint firstItem="isI-sJ-glc" firstAttribute="top" secondItem="s1b-V9-EN7" secondAttribute="top" constant="58" id="CQy-dO-EhN"/>
-                                    <constraint firstItem="QmU-Df-m56" firstAttribute="leading" secondItem="s1b-V9-EN7" secondAttribute="leading" constant="86" id="Dpl-ej-6vc"/>
                                     <constraint firstItem="isI-sJ-glc" firstAttribute="leading" secondItem="s1b-V9-EN7" secondAttribute="leading" constant="107" id="WkT-Ad-RvI"/>
+                                    <constraint firstItem="IUv-gj-yGc" firstAttribute="leading" secondItem="s1b-V9-EN7" secondAttribute="leading" constant="74" id="aB4-gG-g5X"/>
+                                    <constraint firstItem="IUv-gj-yGc" firstAttribute="centerX" secondItem="isI-sJ-glc" secondAttribute="centerX" id="erY-zY-JXE"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -79,6 +87,8 @@
                     </view>
                     <connections>
                         <outlet property="dataLabel" destination="cF2-Le-7mQ" id="3EH-BK-JV6"/>
+                        <outlet property="demoButton" destination="isI-sJ-glc" id="H7Q-Rr-55N"/>
+                        <outlet property="helloWorld" destination="IUv-gj-yGc" id="9ar-zM-xUO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GmD-Rr-ZGN" sceneMemberID="firstResponder"/>

@@ -11,6 +11,8 @@ import UIKit
 class DataViewController: UIViewController {
 
     @IBOutlet weak var dataLabel: UILabel!
+    @IBOutlet weak var demoButton: UIButton!
+    @IBOutlet weak var helloWorld: UILabel!
     var dataObject: String = ""
 
 
@@ -30,5 +32,9 @@ class DataViewController: UIViewController {
     }
 
 
+    // MARK: IB Actions
+    @IBAction func buttonTapped(sender: UIButton) {
+        helloWorld.text = "Hello Darvell!"
+    }
 }
 
