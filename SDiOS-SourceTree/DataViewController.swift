@@ -34,7 +34,7 @@ class DataViewController: UIViewController {
 
     // MARK: IB Actions
     @IBAction func buttonTapped(sender: UIButton) {
-        helloWorld.text = "Hello Darvell!"
+        helloWorld.text = "Hello Diego!"
     }
 }
 
